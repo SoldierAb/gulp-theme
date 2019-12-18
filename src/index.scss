@@ -1,0 +1,11 @@
+
+$color-init:red;
+.app{
+    background-color: $color-init;
+    width:120px;
+}
+
+.default-color{
+    color:$font-color-normal;
+    box-shadow: 2px 10px $box-shadow-light;
+}
