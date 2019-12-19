@@ -7,8 +7,11 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "gulp --env=production",
     "dev": "gulp --env=development",
-    "release": "standard-version",
-    "commit": "git-cz"
+    "cm": "git-cz",
+    "release": "standard-version"
+  },
+  "pre-commit": {
+    "run": "release"
   },
   "husky": {
     "hooks": {
