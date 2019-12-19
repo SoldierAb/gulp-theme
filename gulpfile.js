@@ -52,7 +52,6 @@ const watchPipe = () => {
     watcher.on("add", gulp.series('clean', scss))
     watcher.on("unlink", gulp.series('clean', scss))
     // watcher.on('unlink', function (path, stats) {
-    //     console.log(`File ${path} was removed,${stats}`);
     //     scssTask()
     // });
 }

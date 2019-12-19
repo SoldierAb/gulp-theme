@@ -7,8 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "gulp --env=production",
     "dev": "gulp --env=development",
-    "push": "npm-run-all commit release",
     "commit": "git add . && git-cz",
+    "push:version": "npm-run-all commit release",
     "release": "standard-version && git push"
   },
   "husky": {
