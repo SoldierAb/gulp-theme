@@ -12,14 +12,6 @@
   },
   "author": "cgj",
   "license": "MIT",
-  "husky": {
-    "hooks": {
-      "pre-commit": {
-        "run": "release"
-      },
-      "commit-msg": "commitlint -e $GIT_PARAMS"
-    }
-  },
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog",
