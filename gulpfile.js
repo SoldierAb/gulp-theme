@@ -9,6 +9,9 @@ const gulp = require('gulp'),
     gulpif = require('gulp-if'),
     fs = require("fs"),
     del = require('del'),
+    // vinyl = require('vinyl'),
+    // vinyl_paths = require('vinyl-paths'),
+    filter = require('gulp-filter'),
     argv = require('yargs').argv,
     theme = process.env.npm_config_theme || 'default',
     node_env = argv.env || 'development',
@@ -30,6 +33,22 @@ const scssTask = () => {
         }))
         .pipe(sourcemaps.write('./'))
         .pipe(gulp.dest(output_path_modules))
+        .pipe(filter([output_path,`!${output_path}**/*.map`]))
+        .pipe(concat(`${theme}-test${node_env === 'production' ? '.min' : ''}.css`))
+        .pipe(sourcemaps.write('./'))
+        .pipe(gulp.dest(output_path))
+    // .pipe(vinyl_paths(async path=>{
+    //     const file = new vinyl({path});
+    //     console.log(path);
+    //     if(file.extname === '.css'){
+    //         gulp.src(path)
+    //         .pipe(sourcemaps.init())
+    //         .pipe(concat(`${theme}-test${node_env === 'production' ? '.min' : ''}.css`))
+    //         .pipe(sourcemaps.write('./'))
+    //         .pipe(gulp.dest(output_path))
+    //     } 
+    // }))
+
 }
 
 
