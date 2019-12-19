@@ -1,8 +1,0 @@
-{
-  "hooks": {
-    "pre-commit": {
-        "run": "release"
-      },
-      "commit-msg": "commitlint -e $GIT_PARAMS"
-  }
-}
