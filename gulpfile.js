@@ -17,7 +17,6 @@ const gulp = require('gulp'),
     output_path = 'dist/style',
     output_path_modules = `${output_path}/modules/`;
 
-
 const scssTask = () => {
     gulp.src([...scss_path, '!src/theme/*.scss'])
         .pipe(sourcemaps.init())
@@ -36,7 +35,6 @@ const scssTask = () => {
         .pipe(sourcemaps.write('./'))
         .pipe(gulp.dest(output_path))
 }
-
 
 // scss 全局变量注入
 const setGlobalScss = () => {
