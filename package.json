@@ -7,8 +7,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "gulp --env=production",
     "dev": "gulp --env=development",
+    "push":"npm-run-all commit release",
     "commit": "git add . && git-cz",
-    "release": "standard-version"
+    "release": "standard-version && git push"
   },
   "husky": {
     "hooks": {
@@ -49,6 +50,7 @@
     "gulp-sourcemaps": "^2.6.5",
     "husky": "^3.1.0",
     "minimist": "^1.2.0",
+    "npm-run-all": "^4.1.5",
     "pre-commit": "^1.2.2",
     "vinyl": "^2.2.0",
     "vinyl-paths": "^3.0.1",
