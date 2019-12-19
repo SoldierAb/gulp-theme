@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.32](https://github.com/SoldierAb/gulp-skin/compare/v0.0.3...v0.0.32) (2019-12-19)
+
+
+### Features
+
+* pre-push ([a285771](https://github.com/SoldierAb/gulp-skin/commit/a285771d424d77e6f51eec83741d0d9fb6647685))
+
+
+### Bug Fixes
+
+* add huskyrc ([9bb2fbe](https://github.com/SoldierAb/gulp-skin/commit/9bb2fbebd9c05eaa635544f932c33f5d1e8a0e3b))
+* fix log ([63e193b](https://github.com/SoldierAb/gulp-skin/commit/63e193b425b185d74120b451ed54458ab8eda495))
+* log update ([5dae978](https://github.com/SoldierAb/gulp-skin/commit/5dae978e44ff7a93bbaf9e41bb6608e9fb01b23e))
+
 ### [0.0.31](https://github.com/SoldierAb/gulp-skin/compare/v0.0.3...v0.0.31) (2019-12-19)
 
 
