@@ -14,7 +14,7 @@ const gulp = require('gulp'),
     theme = process.env.npm_config_theme || 'default',
     node_env = argv.env || 'development',
     scss_path = ['src/**/*.scss', '!node_modules'],
-    output_path = 'dist/',
+    output_path = 'dist/style',
     output_path_modules = `${output_path}/modules/`;
 
 
