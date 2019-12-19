@@ -1,17 +1,14 @@
 {
   "name": "gulp-skin",
-  "version": "0.0.3",
+  "version": "0.0.31",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "gulp --env=production",
     "dev": "gulp --env=development",
-    "cm": "git-cz",
+    "commit": "git add . && git-cz",
     "release": "standard-version"
-  },
-  "pre-commit": {
-    "run": "release"
   },
   "husky": {
     "hooks": {

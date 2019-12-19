@@ -2,6 +2,398 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.31](https://github.com/SoldierAb/gulp-skin/compare/v0.0.3...v0.0.31) (2019-12-19)
+
+
+### Features
+
+* pre-push ([a285771](https://github.com/SoldierAb/gulp-skin/commit/a285771d424d77e6f51eec83741d0d9fb6647685))
+
+
+### Bug Fixes
+
+* add huskyrc ([9bb2fbe](https://github.com/SoldierAb/gulp-skin/commit/9bb2fbebd9c05eaa635544f932c33f5d1e8a0e3b))
+* fix log ([63e193b](https://github.com/SoldierAb/gulp-skin/commit/63e193b425b185d74120b451ed54458ab8eda495))
+* log update ([5dae978](https://github.com/SoldierAb/gulp-skin/commit/5dae978e44ff7a93bbaf9e41bb6608e9fb01b23e))
+
+### [0.0.30](https://github.com/SoldierAb/gulp-skin/compare/v0.0.3...v0.0.30) (2019-12-19)
+
+
+### Features
+
+* pre-push ([a285771](https://github.com/SoldierAb/gulp-skin/commit/a285771d424d77e6f51eec83741d0d9fb6647685))
+
+
+### Bug Fixes
+
+* add huskyrc ([9bb2fbe](https://github.com/SoldierAb/gulp-skin/commit/9bb2fbebd9c05eaa635544f932c33f5d1e8a0e3b))
+* fix log ([63e193b](https://github.com/SoldierAb/gulp-skin/commit/63e193b425b185d74120b451ed54458ab8eda495))
+* log update ([5dae978](https://github.com/SoldierAb/gulp-skin/commit/5dae978e44ff7a93bbaf9e41bb6608e9fb01b23e))
+
+### [0.0.29](https://github.com/SoldierAb/gulp-skin/compare/v0.0.3...v0.0.29) (2019-12-19)
+
+
+### Features
+
+* pre-push ([a285771](https://github.com/SoldierAb/gulp-skin/commit/a285771d424d77e6f51eec83741d0d9fb6647685))
+
+
+### Bug Fixes
+
+* add huskyrc ([9bb2fbe](https://github.com/SoldierAb/gulp-skin/commit/9bb2fbebd9c05eaa635544f932c33f5d1e8a0e3b))
+* fix log ([63e193b](https://github.com/SoldierAb/gulp-skin/commit/63e193b425b185d74120b451ed54458ab8eda495))
+* log update ([5dae978](https://github.com/SoldierAb/gulp-skin/commit/5dae978e44ff7a93bbaf9e41bb6608e9fb01b23e))
+
+### [0.0.28](https://github.com/SoldierAb/gulp-skin/compare/v0.0.3...v0.0.28) (2019-12-19)
+
+
+### Features
+
+* pre-push ([a285771](https://github.com/SoldierAb/gulp-skin/commit/a285771d424d77e6f51eec83741d0d9fb6647685))
+
+
+### Bug Fixes
+
+* add huskyrc ([9bb2fbe](https://github.com/SoldierAb/gulp-skin/commit/9bb2fbebd9c05eaa635544f932c33f5d1e8a0e3b))
+* fix log ([63e193b](https://github.com/SoldierAb/gulp-skin/commit/63e193b425b185d74120b451ed54458ab8eda495))
+* log update ([5dae978](https://github.com/SoldierAb/gulp-skin/commit/5dae978e44ff7a93bbaf9e41bb6608e9fb01b23e))
+
+### [0.0.27](https://github.com/SoldierAb/gulp-skin/compare/v0.0.3...v0.0.27) (2019-12-19)
+
+
+### Features
+
+* pre-push ([a285771](https://github.com/SoldierAb/gulp-skin/commit/a285771d424d77e6f51eec83741d0d9fb6647685))
+
+
+### Bug Fixes
+
+* add huskyrc ([9bb2fbe](https://github.com/SoldierAb/gulp-skin/commit/9bb2fbebd9c05eaa635544f932c33f5d1e8a0e3b))
+* fix log ([63e193b](https://github.com/SoldierAb/gulp-skin/commit/63e193b425b185d74120b451ed54458ab8eda495))
+* log update ([5dae978](https://github.com/SoldierAb/gulp-skin/commit/5dae978e44ff7a93bbaf9e41bb6608e9fb01b23e))
+
+### [0.0.26](https://github.com/SoldierAb/gulp-skin/compare/v0.0.3...v0.0.26) (2019-12-19)
+
+
+### Features
+
+* pre-push ([a285771](https://github.com/SoldierAb/gulp-skin/commit/a285771d424d77e6f51eec83741d0d9fb6647685))
+
+
+### Bug Fixes
+
+* add huskyrc ([9bb2fbe](https://github.com/SoldierAb/gulp-skin/commit/9bb2fbebd9c05eaa635544f932c33f5d1e8a0e3b))
+* fix log ([63e193b](https://github.com/SoldierAb/gulp-skin/commit/63e193b425b185d74120b451ed54458ab8eda495))
+* log update ([5dae978](https://github.com/SoldierAb/gulp-skin/commit/5dae978e44ff7a93bbaf9e41bb6608e9fb01b23e))
+
+### [0.0.25](https://github.com/SoldierAb/gulp-skin/compare/v0.0.3...v0.0.25) (2019-12-19)
+
+
+### Features
+
+* pre-push ([a285771](https://github.com/SoldierAb/gulp-skin/commit/a285771d424d77e6f51eec83741d0d9fb6647685))
+
+
+### Bug Fixes
+
+* add huskyrc ([9bb2fbe](https://github.com/SoldierAb/gulp-skin/commit/9bb2fbebd9c05eaa635544f932c33f5d1e8a0e3b))
+* fix log ([63e193b](https://github.com/SoldierAb/gulp-skin/commit/63e193b425b185d74120b451ed54458ab8eda495))
+* log update ([5dae978](https://github.com/SoldierAb/gulp-skin/commit/5dae978e44ff7a93bbaf9e41bb6608e9fb01b23e))
+
+### [0.0.24](https://github.com/SoldierAb/gulp-skin/compare/v0.0.3...v0.0.24) (2019-12-19)
+
+
+### Features
+
+* pre-push ([a285771](https://github.com/SoldierAb/gulp-skin/commit/a285771d424d77e6f51eec83741d0d9fb6647685))
+
+
+### Bug Fixes
+
+* add huskyrc ([9bb2fbe](https://github.com/SoldierAb/gulp-skin/commit/9bb2fbebd9c05eaa635544f932c33f5d1e8a0e3b))
+* fix log ([63e193b](https://github.com/SoldierAb/gulp-skin/commit/63e193b425b185d74120b451ed54458ab8eda495))
+* log update ([5dae978](https://github.com/SoldierAb/gulp-skin/commit/5dae978e44ff7a93bbaf9e41bb6608e9fb01b23e))
+
+### [0.0.23](https://github.com/SoldierAb/gulp-skin/compare/v0.0.3...v0.0.23) (2019-12-19)
+
+
+### Features
+
+* pre-push ([a285771](https://github.com/SoldierAb/gulp-skin/commit/a285771d424d77e6f51eec83741d0d9fb6647685))
+
+
+### Bug Fixes
+
+* add huskyrc ([9bb2fbe](https://github.com/SoldierAb/gulp-skin/commit/9bb2fbebd9c05eaa635544f932c33f5d1e8a0e3b))
+* fix log ([63e193b](https://github.com/SoldierAb/gulp-skin/commit/63e193b425b185d74120b451ed54458ab8eda495))
+* log update ([5dae978](https://github.com/SoldierAb/gulp-skin/commit/5dae978e44ff7a93bbaf9e41bb6608e9fb01b23e))
+
+### [0.0.22](https://github.com/SoldierAb/gulp-skin/compare/v0.0.3...v0.0.22) (2019-12-19)
+
+
+### Features
+
+* pre-push ([a285771](https://github.com/SoldierAb/gulp-skin/commit/a285771d424d77e6f51eec83741d0d9fb6647685))
+
+
+### Bug Fixes
+
+* add huskyrc ([9bb2fbe](https://github.com/SoldierAb/gulp-skin/commit/9bb2fbebd9c05eaa635544f932c33f5d1e8a0e3b))
+* fix log ([63e193b](https://github.com/SoldierAb/gulp-skin/commit/63e193b425b185d74120b451ed54458ab8eda495))
+* log update ([5dae978](https://github.com/SoldierAb/gulp-skin/commit/5dae978e44ff7a93bbaf9e41bb6608e9fb01b23e))
+
+### [0.0.21](https://github.com/SoldierAb/gulp-skin/compare/v0.0.3...v0.0.21) (2019-12-19)
+
+
+### Features
+
+* pre-push ([a285771](https://github.com/SoldierAb/gulp-skin/commit/a285771d424d77e6f51eec83741d0d9fb6647685))
+
+
+### Bug Fixes
+
+* add huskyrc ([9bb2fbe](https://github.com/SoldierAb/gulp-skin/commit/9bb2fbebd9c05eaa635544f932c33f5d1e8a0e3b))
+* fix log ([63e193b](https://github.com/SoldierAb/gulp-skin/commit/63e193b425b185d74120b451ed54458ab8eda495))
+* log update ([5dae978](https://github.com/SoldierAb/gulp-skin/commit/5dae978e44ff7a93bbaf9e41bb6608e9fb01b23e))
+
+### [0.0.20](https://github.com/SoldierAb/gulp-skin/compare/v0.0.3...v0.0.20) (2019-12-19)
+
+
+### Features
+
+* pre-push ([a285771](https://github.com/SoldierAb/gulp-skin/commit/a285771d424d77e6f51eec83741d0d9fb6647685))
+
+
+### Bug Fixes
+
+* add huskyrc ([9bb2fbe](https://github.com/SoldierAb/gulp-skin/commit/9bb2fbebd9c05eaa635544f932c33f5d1e8a0e3b))
+* fix log ([63e193b](https://github.com/SoldierAb/gulp-skin/commit/63e193b425b185d74120b451ed54458ab8eda495))
+* log update ([5dae978](https://github.com/SoldierAb/gulp-skin/commit/5dae978e44ff7a93bbaf9e41bb6608e9fb01b23e))
+
+### [0.0.19](https://github.com/SoldierAb/gulp-skin/compare/v0.0.3...v0.0.19) (2019-12-19)
+
+
+### Features
+
+* pre-push ([a285771](https://github.com/SoldierAb/gulp-skin/commit/a285771d424d77e6f51eec83741d0d9fb6647685))
+
+
+### Bug Fixes
+
+* add huskyrc ([9bb2fbe](https://github.com/SoldierAb/gulp-skin/commit/9bb2fbebd9c05eaa635544f932c33f5d1e8a0e3b))
+* fix log ([63e193b](https://github.com/SoldierAb/gulp-skin/commit/63e193b425b185d74120b451ed54458ab8eda495))
+* log update ([5dae978](https://github.com/SoldierAb/gulp-skin/commit/5dae978e44ff7a93bbaf9e41bb6608e9fb01b23e))
+
+### [0.0.18](https://github.com/SoldierAb/gulp-skin/compare/v0.0.3...v0.0.18) (2019-12-19)
+
+
+### Features
+
+* pre-push ([a285771](https://github.com/SoldierAb/gulp-skin/commit/a285771d424d77e6f51eec83741d0d9fb6647685))
+
+
+### Bug Fixes
+
+* add huskyrc ([9bb2fbe](https://github.com/SoldierAb/gulp-skin/commit/9bb2fbebd9c05eaa635544f932c33f5d1e8a0e3b))
+* fix log ([63e193b](https://github.com/SoldierAb/gulp-skin/commit/63e193b425b185d74120b451ed54458ab8eda495))
+* log update ([5dae978](https://github.com/SoldierAb/gulp-skin/commit/5dae978e44ff7a93bbaf9e41bb6608e9fb01b23e))
+
+### [0.0.17](https://github.com/SoldierAb/gulp-skin/compare/v0.0.3...v0.0.17) (2019-12-19)
+
+
+### Features
+
+* pre-push ([a285771](https://github.com/SoldierAb/gulp-skin/commit/a285771d424d77e6f51eec83741d0d9fb6647685))
+
+
+### Bug Fixes
+
+* add huskyrc ([9bb2fbe](https://github.com/SoldierAb/gulp-skin/commit/9bb2fbebd9c05eaa635544f932c33f5d1e8a0e3b))
+* fix log ([63e193b](https://github.com/SoldierAb/gulp-skin/commit/63e193b425b185d74120b451ed54458ab8eda495))
+* log update ([5dae978](https://github.com/SoldierAb/gulp-skin/commit/5dae978e44ff7a93bbaf9e41bb6608e9fb01b23e))
+
+### [0.0.16](https://github.com/SoldierAb/gulp-skin/compare/v0.0.3...v0.0.16) (2019-12-19)
+
+
+### Features
+
+* pre-push ([a285771](https://github.com/SoldierAb/gulp-skin/commit/a285771d424d77e6f51eec83741d0d9fb6647685))
+
+
+### Bug Fixes
+
+* add huskyrc ([9bb2fbe](https://github.com/SoldierAb/gulp-skin/commit/9bb2fbebd9c05eaa635544f932c33f5d1e8a0e3b))
+* fix log ([63e193b](https://github.com/SoldierAb/gulp-skin/commit/63e193b425b185d74120b451ed54458ab8eda495))
+* log update ([5dae978](https://github.com/SoldierAb/gulp-skin/commit/5dae978e44ff7a93bbaf9e41bb6608e9fb01b23e))
+
+### [0.0.15](https://github.com/SoldierAb/gulp-skin/compare/v0.0.3...v0.0.15) (2019-12-19)
+
+
+### Features
+
+* pre-push ([a285771](https://github.com/SoldierAb/gulp-skin/commit/a285771d424d77e6f51eec83741d0d9fb6647685))
+
+
+### Bug Fixes
+
+* add huskyrc ([9bb2fbe](https://github.com/SoldierAb/gulp-skin/commit/9bb2fbebd9c05eaa635544f932c33f5d1e8a0e3b))
+* fix log ([63e193b](https://github.com/SoldierAb/gulp-skin/commit/63e193b425b185d74120b451ed54458ab8eda495))
+* log update ([5dae978](https://github.com/SoldierAb/gulp-skin/commit/5dae978e44ff7a93bbaf9e41bb6608e9fb01b23e))
+
+### [0.0.14](https://github.com/SoldierAb/gulp-skin/compare/v0.0.3...v0.0.14) (2019-12-19)
+
+
+### Features
+
+* pre-push ([a285771](https://github.com/SoldierAb/gulp-skin/commit/a285771d424d77e6f51eec83741d0d9fb6647685))
+
+
+### Bug Fixes
+
+* add huskyrc ([9bb2fbe](https://github.com/SoldierAb/gulp-skin/commit/9bb2fbebd9c05eaa635544f932c33f5d1e8a0e3b))
+* fix log ([63e193b](https://github.com/SoldierAb/gulp-skin/commit/63e193b425b185d74120b451ed54458ab8eda495))
+* log update ([5dae978](https://github.com/SoldierAb/gulp-skin/commit/5dae978e44ff7a93bbaf9e41bb6608e9fb01b23e))
+
+### [0.0.13](https://github.com/SoldierAb/gulp-skin/compare/v0.0.3...v0.0.13) (2019-12-19)
+
+
+### Features
+
+* pre-push ([a285771](https://github.com/SoldierAb/gulp-skin/commit/a285771d424d77e6f51eec83741d0d9fb6647685))
+
+
+### Bug Fixes
+
+* add huskyrc ([9bb2fbe](https://github.com/SoldierAb/gulp-skin/commit/9bb2fbebd9c05eaa635544f932c33f5d1e8a0e3b))
+* fix log ([63e193b](https://github.com/SoldierAb/gulp-skin/commit/63e193b425b185d74120b451ed54458ab8eda495))
+* log update ([5dae978](https://github.com/SoldierAb/gulp-skin/commit/5dae978e44ff7a93bbaf9e41bb6608e9fb01b23e))
+
+### [0.0.12](https://github.com/SoldierAb/gulp-skin/compare/v0.0.3...v0.0.12) (2019-12-19)
+
+
+### Features
+
+* pre-push ([a285771](https://github.com/SoldierAb/gulp-skin/commit/a285771d424d77e6f51eec83741d0d9fb6647685))
+
+
+### Bug Fixes
+
+* add huskyrc ([9bb2fbe](https://github.com/SoldierAb/gulp-skin/commit/9bb2fbebd9c05eaa635544f932c33f5d1e8a0e3b))
+* fix log ([63e193b](https://github.com/SoldierAb/gulp-skin/commit/63e193b425b185d74120b451ed54458ab8eda495))
+* log update ([5dae978](https://github.com/SoldierAb/gulp-skin/commit/5dae978e44ff7a93bbaf9e41bb6608e9fb01b23e))
+
+### [0.0.11](https://github.com/SoldierAb/gulp-skin/compare/v0.0.3...v0.0.11) (2019-12-19)
+
+
+### Features
+
+* pre-push ([a285771](https://github.com/SoldierAb/gulp-skin/commit/a285771d424d77e6f51eec83741d0d9fb6647685))
+
+
+### Bug Fixes
+
+* add huskyrc ([9bb2fbe](https://github.com/SoldierAb/gulp-skin/commit/9bb2fbebd9c05eaa635544f932c33f5d1e8a0e3b))
+* fix log ([63e193b](https://github.com/SoldierAb/gulp-skin/commit/63e193b425b185d74120b451ed54458ab8eda495))
+* log update ([5dae978](https://github.com/SoldierAb/gulp-skin/commit/5dae978e44ff7a93bbaf9e41bb6608e9fb01b23e))
+
+### [0.0.10](https://github.com/SoldierAb/gulp-skin/compare/v0.0.3...v0.0.10) (2019-12-19)
+
+
+### Features
+
+* pre-push ([a285771](https://github.com/SoldierAb/gulp-skin/commit/a285771d424d77e6f51eec83741d0d9fb6647685))
+
+
+### Bug Fixes
+
+* add huskyrc ([9bb2fbe](https://github.com/SoldierAb/gulp-skin/commit/9bb2fbebd9c05eaa635544f932c33f5d1e8a0e3b))
+* fix log ([63e193b](https://github.com/SoldierAb/gulp-skin/commit/63e193b425b185d74120b451ed54458ab8eda495))
+* log update ([5dae978](https://github.com/SoldierAb/gulp-skin/commit/5dae978e44ff7a93bbaf9e41bb6608e9fb01b23e))
+
+### [0.0.9](https://github.com/SoldierAb/gulp-skin/compare/v0.0.3...v0.0.9) (2019-12-19)
+
+
+### Features
+
+* pre-push ([a285771](https://github.com/SoldierAb/gulp-skin/commit/a285771d424d77e6f51eec83741d0d9fb6647685))
+
+
+### Bug Fixes
+
+* add huskyrc ([9bb2fbe](https://github.com/SoldierAb/gulp-skin/commit/9bb2fbebd9c05eaa635544f932c33f5d1e8a0e3b))
+* fix log ([63e193b](https://github.com/SoldierAb/gulp-skin/commit/63e193b425b185d74120b451ed54458ab8eda495))
+* log update ([5dae978](https://github.com/SoldierAb/gulp-skin/commit/5dae978e44ff7a93bbaf9e41bb6608e9fb01b23e))
+
+### [0.0.8](https://github.com/SoldierAb/gulp-skin/compare/v0.0.3...v0.0.8) (2019-12-19)
+
+
+### Features
+
+* pre-push ([a285771](https://github.com/SoldierAb/gulp-skin/commit/a285771d424d77e6f51eec83741d0d9fb6647685))
+
+
+### Bug Fixes
+
+* add huskyrc ([9bb2fbe](https://github.com/SoldierAb/gulp-skin/commit/9bb2fbebd9c05eaa635544f932c33f5d1e8a0e3b))
+* fix log ([63e193b](https://github.com/SoldierAb/gulp-skin/commit/63e193b425b185d74120b451ed54458ab8eda495))
+* log update ([5dae978](https://github.com/SoldierAb/gulp-skin/commit/5dae978e44ff7a93bbaf9e41bb6608e9fb01b23e))
+
+### [0.0.7](https://github.com/SoldierAb/gulp-skin/compare/v0.0.3...v0.0.7) (2019-12-19)
+
+
+### Features
+
+* pre-push ([a285771](https://github.com/SoldierAb/gulp-skin/commit/a285771d424d77e6f51eec83741d0d9fb6647685))
+
+
+### Bug Fixes
+
+* add huskyrc ([9bb2fbe](https://github.com/SoldierAb/gulp-skin/commit/9bb2fbebd9c05eaa635544f932c33f5d1e8a0e3b))
+* fix log ([63e193b](https://github.com/SoldierAb/gulp-skin/commit/63e193b425b185d74120b451ed54458ab8eda495))
+* log update ([5dae978](https://github.com/SoldierAb/gulp-skin/commit/5dae978e44ff7a93bbaf9e41bb6608e9fb01b23e))
+
+### [0.0.6](https://github.com/SoldierAb/gulp-skin/compare/v0.0.3...v0.0.6) (2019-12-19)
+
+
+### Features
+
+* pre-push ([a285771](https://github.com/SoldierAb/gulp-skin/commit/a285771d424d77e6f51eec83741d0d9fb6647685))
+
+
+### Bug Fixes
+
+* add huskyrc ([9bb2fbe](https://github.com/SoldierAb/gulp-skin/commit/9bb2fbebd9c05eaa635544f932c33f5d1e8a0e3b))
+* fix log ([63e193b](https://github.com/SoldierAb/gulp-skin/commit/63e193b425b185d74120b451ed54458ab8eda495))
+* log update ([5dae978](https://github.com/SoldierAb/gulp-skin/commit/5dae978e44ff7a93bbaf9e41bb6608e9fb01b23e))
+
+### [0.0.5](https://github.com/SoldierAb/gulp-skin/compare/v0.0.3...v0.0.5) (2019-12-19)
+
+
+### Features
+
+* pre-push ([a285771](https://github.com/SoldierAb/gulp-skin/commit/a285771d424d77e6f51eec83741d0d9fb6647685))
+
+
+### Bug Fixes
+
+* add huskyrc ([9bb2fbe](https://github.com/SoldierAb/gulp-skin/commit/9bb2fbebd9c05eaa635544f932c33f5d1e8a0e3b))
+* fix log ([63e193b](https://github.com/SoldierAb/gulp-skin/commit/63e193b425b185d74120b451ed54458ab8eda495))
+* log update ([5dae978](https://github.com/SoldierAb/gulp-skin/commit/5dae978e44ff7a93bbaf9e41bb6608e9fb01b23e))
+
+### [0.0.4](https://github.com/SoldierAb/gulp-skin/compare/v0.0.3...v0.0.4) (2019-12-19)
+
+
+### Features
+
+* pre-push ([a285771](https://github.com/SoldierAb/gulp-skin/commit/a285771d424d77e6f51eec83741d0d9fb6647685))
+
+
+### Bug Fixes
+
+* add huskyrc ([9bb2fbe](https://github.com/SoldierAb/gulp-skin/commit/9bb2fbebd9c05eaa635544f932c33f5d1e8a0e3b))
+* fix log ([63e193b](https://github.com/SoldierAb/gulp-skin/commit/63e193b425b185d74120b451ed54458ab8eda495))
+* log update ([5dae978](https://github.com/SoldierAb/gulp-skin/commit/5dae978e44ff7a93bbaf9e41bb6608e9fb01b23e))
+
 ### [0.0.3](https://github.com/SoldierAb/gulp-skin/compare/v0.0.2...v0.0.3) (2019-12-19)
 
 
