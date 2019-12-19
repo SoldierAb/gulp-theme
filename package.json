@@ -9,6 +9,7 @@
     "dev": "gulp --env=development",
     "release": "standard-version"
   },
+  "pre-push": "release",
   "author": "cgj",
   "license": "ISC",
   "devDependencies": {
@@ -35,6 +36,7 @@
     "last 2 versions"
   ],
   "dependencies": {
+    "pre-push": "^0.1.1",
     "standard-version": "^7.0.1"
   }
 }
