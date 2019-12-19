@@ -9,8 +9,6 @@ const gulp = require('gulp'),
     gulpif = require('gulp-if'),
     fs = require("fs"),
     del = require('del'),
-    // vinyl = require('vinyl'),
-    // vinyl_paths = require('vinyl-paths'),
     filter = require('gulp-filter'),
     argv = require('yargs').argv,
     theme = process.env.npm_config_theme || 'default',
@@ -33,37 +31,12 @@ const scssTask = () => {
         }))
         .pipe(sourcemaps.write('./'))
         .pipe(gulp.dest(output_path_modules))
-        .pipe(filter([output_path,`!${output_path}**/*.map`]))
-        .pipe(concat(`${theme}-test${node_env === 'production' ? '.min' : ''}.css`))
-        .pipe(sourcemaps.write('./'))
-        .pipe(gulp.dest(output_path))
-    // .pipe(vinyl_paths(async path=>{
-    //     const file = new vinyl({path});
-    //     console.log(path);
-    //     if(file.extname === '.css'){
-    //         gulp.src(path)
-    //         .pipe(sourcemaps.init())
-    //         .pipe(concat(`${theme}-test${node_env === 'production' ? '.min' : ''}.css`))
-    //         .pipe(sourcemaps.write('./'))
-    //         .pipe(gulp.dest(output_path))
-    //     } 
-    // }))
-
-}
-
-
-const cssTask = () => {
-    gulp.src([...scss_path, '!src/theme/*.scss'])
-        .pipe(sourcemaps.init())
-        .on('error', scss.logError)//错误信息
-        .pipe(setGlobalScss())
-        .pipe(scss())
-        .pipe(gulpif(node_env === 'production', cleanCss())) // 仅在生产环境时候进行压缩
-        .pipe(autoprefix())
+        .pipe(filter(`**/*.css`))
         .pipe(concat(`${theme}${node_env === 'production' ? '.min' : ''}.css`))
         .pipe(sourcemaps.write('./'))
         .pipe(gulp.dest(output_path))
 }
+
 
 // scss 全局变量注入
 const setGlobalScss = () => {
@@ -75,9 +48,9 @@ const setGlobalScss = () => {
 
 const watchPipe = () => {
     const watcher = gulp.watch(scss_path);
-    watcher.on("change", gulp.series('clean', gulp.parallel('scss', 'css')))
-    watcher.on("add", gulp.series('clean', gulp.parallel('scss', 'css')))
-    watcher.on("unlink", gulp.series('clean', gulp.parallel('scss', 'css')))
+    watcher.on("change", gulp.series('clean', scss))
+    watcher.on("add", gulp.series('clean', scss))
+    watcher.on("unlink", gulp.series('clean', scss))
     // watcher.on('unlink', function (path, stats) {
     //     console.log(`File ${path} was removed,${stats}`);
     //     scssTask()
@@ -91,6 +64,5 @@ const cleanFiles = () => {
 gulp.task('clean', cleanFiles)
 gulp.task('watch', watchPipe)
 gulp.task('scss', scssTask)
-gulp.task('css', cssTask)
 
-gulp.task('default', gulp.series('clean', gulp.parallel('scss', 'css', 'watch')))
+gulp.task('default', gulp.series('clean', gulp.parallel('scss', 'watch')))
