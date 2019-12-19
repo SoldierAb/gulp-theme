@@ -31,7 +31,7 @@ const scssTask = () => {
         }))
         .pipe(sourcemaps.write('./'))
         .pipe(gulp.dest(output_path_modules))
-        .pipe(filter(`**/*.css`))
+        .pipe(filter(`**/*.css`))   //合并过滤
         .pipe(concat(`${theme}${node_env === 'production' ? '.min' : ''}.css`))
         .pipe(sourcemaps.write('./'))
         .pipe(gulp.dest(output_path))
