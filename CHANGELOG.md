@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.33](https://github.com/SoldierAb/gulp-skin/compare/v0.0.32...v0.0.33) (2019-12-19)
+
+
+### Features
+
+* add simple git push action ([945d215](https://github.com/SoldierAb/gulp-skin/commit/945d215801f0faa966d07be628cfa664e8b85dee))
+
 ### [0.0.32](https://github.com/SoldierAb/gulp-skin/compare/v0.0.3...v0.0.32) (2019-12-19)
 
 

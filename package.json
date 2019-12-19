@@ -1,13 +1,13 @@
 {
   "name": "gulp-skin",
-  "version": "0.0.32",
+  "version": "0.0.33",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "gulp --env=production",
     "dev": "gulp --env=development",
-    "push":"npm-run-all commit release",
+    "push": "npm-run-all commit release",
     "commit": "git add . && git-cz",
     "release": "standard-version && git push"
   },
