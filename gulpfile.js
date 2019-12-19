@@ -6,6 +6,8 @@ const gulp = require('gulp'),
     rename = require('gulp-rename'),
     sourcemaps = require('gulp-sourcemaps'),
     autoprefix = require('gulp-autoprefixer'),
+    webserver = require('gulp-webserver'),
+    connect = require('gulp-connect'),
     gulpif = require('gulp-if'),
     fs = require("fs"),
     del = require('del'),
@@ -63,3 +65,19 @@ gulp.task('watch', watchPipe)
 gulp.task('scss', scssTask)
 
 gulp.task('default', gulp.series('clean', gulp.parallel('scss', 'watch')))
+
+gulp.task('webserver', function() {
+    gulp.src('dist')
+      .pipe(webserver({
+        fallback: 'index.html'
+      }));
+  });
+
+const serverConfig={
+    root:'dist',//从哪个目录开启server
+    port:8080,//将服务开启在哪个端口
+  }
+  //建立一个server任务 直接可以用 gulp server就可以执行这个任务
+  gulp.task('server', function() {
+    connect.server(serverConfig);
+  });
