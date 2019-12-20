@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.35](https://github.com/SoldierAb/gulp-skin/compare/v0.0.34...v0.0.35) (2019-12-20)
+
+
+### Features
+
+* add gulp-inject ([c20fc3a](https://github.com/SoldierAb/gulp-skin/commit/c20fc3a60b73161d60d57b1678586db4a4a67b03))
+* add server ([803f688](https://github.com/SoldierAb/gulp-skin/commit/803f68830ea02fa8b5349619637411c25bb3db92))
+
+
+### Bug Fixes
+
+* fix theme style bundle ([88cf5c0](https://github.com/SoldierAb/gulp-skin/commit/88cf5c05be6d06bf4e68d7d32f163bda5357fb04))
+
 ### [0.0.34](https://github.com/SoldierAb/gulp-skin/compare/v0.0.33...v0.0.34) (2019-12-19)
 
 ### [0.0.33](https://github.com/SoldierAb/gulp-skin/compare/v0.0.32...v0.0.33) (2019-12-19)
