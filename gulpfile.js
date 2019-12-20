@@ -28,11 +28,14 @@ const themeTask = done => {
     allTheme.forEach(item => {
         scssTask(done, item)
     })
+    console.log('theme bundle');
     done()
 }
 
 const scssTask = (done, themeType = theme) => {
-    return bundleScss(themeType)
+    return bundleScss(themeType).pipe(bSync.reload({
+        stream: true
+    }))
 }
 
 const bundleScss = (themeType) => {
@@ -49,12 +52,10 @@ const bundleScss = (themeType) => {
         .pipe(sourcemaps.write('./'))
         .pipe(gulp.dest(`${output_path_style_modules}/${themeType}`))
         .pipe(filter(`**/*.css`))   //合并过滤
-        .pipe(concat((concat_theme_name(themeType))))
+        .pipe(concat(concat_theme_name(themeType)))
         .pipe(sourcemaps.write('./'))
         .pipe(gulp.dest(output_path_style))
-        .pipe(bSync.reload({
-            stream: true
-        }))
+      
 }
 
 // scss 全局变量注入
@@ -78,7 +79,7 @@ const cleanFiles = () => {
     return del(output_path_style, { read: false })
 }
 
-const server = (done) => {
+const server = done=> {
     bSync({
         server: {
             baseDir: [output_path, './']
@@ -87,9 +88,9 @@ const server = (done) => {
     done()
 }
 
-const injectTask = () => {
+const injectTask = done=> {
     const target = gulp.src('./public/index.html'),
-        source = gulp.src([`${output_path}/**/*.js`, `${output_path}/${theme}.css`, `!${output_path_style_modules}/**/*.css`], { read: false });
+        source = gulp.src([`${output_path}/**/*.js`, `${output_path_style}/${concat_theme_name(theme)}`, `!${output_path_style_modules}/**/*.css`], { read: false });
 
     return target.pipe(
         inject(source, {
@@ -101,8 +102,8 @@ const injectTask = () => {
                 return inject.transform.apply(inject.transform, arguments);
             }
         }, { relative: true })
-    )
-        .pipe(gulp.dest(output_path));
+    ).pipe(gulp.dest(output_path))
+    done()
 }
 
 const jsTask = (done) => {
