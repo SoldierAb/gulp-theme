@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.36](https://github.com/SoldierAb/gulp-skin/compare/v0.0.35...v0.0.36) (2019-12-20)
+
+
+### Bug Fixes
+
+* fix theme multiple build ([7a6c330](https://github.com/SoldierAb/gulp-skin/commit/7a6c330b4698c598f9a92944d0e0bf24bc4952e9))
+
 ### [0.0.35](https://github.com/SoldierAb/gulp-skin/compare/v0.0.34...v0.0.35) (2019-12-20)
 
 
