@@ -6,20 +6,23 @@ const gulp = require('gulp'),
     rename = require('gulp-rename'),
     sourcemaps = require('gulp-sourcemaps'),
     autoprefix = require('gulp-autoprefixer'),
-    webserver = require('gulp-webserver'),
-    connect = require('gulp-connect'),
+    filter = require('gulp-filter'),
     gulpif = require('gulp-if'),
+    inject = require('gulp-inject'),
+    bSync = require('browser-sync'),
     fs = require("fs"),
     del = require('del'),
-    filter = require('gulp-filter'),
     argv = require('yargs').argv,
     theme = process.env.npm_config_theme || 'default',
     node_env = argv.env || 'development',
     scss_path = ['src/**/*.scss', '!node_modules'],
-    output_path = 'dist/style',
-    output_path_modules = `${output_path}/modules/`;
+    output_path = 'dist',
+    output_path_style = `${output_path}/style`,
+    output_path_style_modules = `${output_path_style}/modules/`,
+    module_ext_name = `${node_env === 'production' ? '.min.css' : '.css'}`,
+    concat_theme_name = `${theme}${node_env === 'production' ? '.min' : ''}.css`;
 
-const scssTask = () => {
+const scssTask = done => {
     gulp.src([...scss_path, '!src/theme/*.scss'])
         .pipe(sourcemaps.init())
         .on('error', scss.logError)//错误信息
@@ -28,14 +31,18 @@ const scssTask = () => {
         .pipe(gulpif(node_env === 'production', cleanCss())) // 仅在生产环境时候进行压缩
         .pipe(autoprefix())
         .pipe(rename((path) => {
-            path.extname = node_env === 'production' ? '.min.css' : '.css'
+            path.extname = module_ext_name
         }))
         .pipe(sourcemaps.write('./'))
-        .pipe(gulp.dest(output_path_modules))
+        .pipe(gulp.dest(output_path_style_modules))
         .pipe(filter(`**/*.css`))   //合并过滤
-        .pipe(concat(`${theme}${node_env === 'production' ? '.min' : ''}.css`))
+        .pipe(concat(concat_theme_name))
         .pipe(sourcemaps.write('./'))
-        .pipe(gulp.dest(output_path))
+        .pipe(gulp.dest(output_path_style))
+        .pipe(bSync.reload({
+            stream: true
+        }))
+    done()
 }
 
 // scss 全局变量注入
@@ -46,38 +53,43 @@ const setGlobalScss = () => {
     return header(scssString);
 }
 
-const watchPipe = () => {
+const watchPipe = done => {
     const watcher = gulp.watch(scss_path);
-    watcher.on("change", gulp.series('clean', scss))
-    watcher.on("add", gulp.series('clean', scss))
-    watcher.on("unlink", gulp.series('clean', scss))
-    // watcher.on('unlink', function (path, stats) {
-    //     scssTask()
-    // });
+    watcher.on("change", gulp.series('clean', 'scss'))
+    watcher.on("add", gulp.series('clean', 'scss'))
+    watcher.on("unlink", gulp.series('clean', 'scss'))
+    done()
 }
 
 const cleanFiles = () => {
-    return del(output_path, { read: false })
+    return del(output_path_style, { read: false })
+}
+
+const server = (done) => {
+    bSync({
+        server: {
+            baseDir: 'dist'
+        }
+    })
+    done()
+}
+
+const injectTask = () => {
+    const target = gulp.src('./public/index.html'),
+        source = gulp.src('./src/index.js', { read: false });
+    // .pipe(
+    //     inject(
+    //         gulp.src(`${output_path_style}/${concat_theme_name}`, { read: false }),
+    //         { starttag: '<!-- inject:head:{{ext}} -->' }
+    //     )
+    // )
+    return target.pipe(inject(source, { relative: true }))
+        .pipe(gulp.dest(output_path));
 }
 
 gulp.task('clean', cleanFiles)
 gulp.task('watch', watchPipe)
 gulp.task('scss', scssTask)
-
-gulp.task('default', gulp.series('clean', gulp.parallel('scss', 'watch')))
-
-gulp.task('webserver', function() {
-    gulp.src('dist')
-      .pipe(webserver({
-        fallback: 'index.html'
-      }));
-  });
-
-const serverConfig={
-    root:'dist',//从哪个目录开启server
-    port:8080,//将服务开启在哪个端口
-  }
-  //建立一个server任务 直接可以用 gulp server就可以执行这个任务
-  gulp.task('server', function() {
-    connect.server(serverConfig);
-  });
+gulp.task('html', injectTask)
+gulp.task('server', server)
+gulp.task('default', gulp.series('clean', gulp.parallel('scss'), 'html', 'server', 'watch'))
