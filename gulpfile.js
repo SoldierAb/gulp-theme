@@ -9,6 +9,7 @@ const gulp = require('gulp'),
     filter = require('gulp-filter'),
     gulpif = require('gulp-if'),
     inject = require('gulp-inject'),
+    gulp_server = require('gulp-webserver'),
     bSync = require('browser-sync'),
     fs = require("fs"),
     del = require('del'),
@@ -28,7 +29,6 @@ const themeTask = done => {
     allTheme.forEach(item => {
         scssTask(done, item)
     })
-    console.log('theme bundle');
     done()
 }
 
@@ -112,6 +112,19 @@ const jsTask = (done) => {
     done();
 }
 
+
+const webServer = ()=>{
+    gulp.src([output_path, './'])
+    .pipe(gulp_server({
+        open:true,
+        // directoryListing: true,
+        livereload:{
+            enable:true,
+            fallback: 'index.html'
+        }
+    }))
+}
+
 gulp.task('clean', cleanFiles)
 gulp.task('watch', watchPipe)
 // gulp.task('scss', scssTask)
@@ -119,4 +132,6 @@ gulp.task('scss', themeTask)
 gulp.task('js', jsTask)
 gulp.task('html', injectTask)
 gulp.task('server', server)
-gulp.task('default', gulp.series('clean', gulp.parallel('scss', 'js'), 'server', 'watch'))
+gulp.task('web',webServer)
+gulp.task('default', gulp.series('clean', gulp.parallel('scss', 'js'), 'watch','web'))
+gulp.task('build', gulp.series('clean', gulp.parallel('scss', 'js')))

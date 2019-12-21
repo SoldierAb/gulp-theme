@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "gulp --env=production",
+    "build": "gulp build --env=production",
     "dev": "gulp --env=development",
     "commit": "git add . && git-cz",
     "push": "npm-run-all commit release",
