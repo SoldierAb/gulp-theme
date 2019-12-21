@@ -15,4 +15,13 @@ npm run dev
 npm run build
 ```
 
+### Git commit
+```
+npm run commit 
+```
+
+### Release update
+```
+npm run release
+```
 
