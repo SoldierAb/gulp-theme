@@ -9,7 +9,6 @@ const gulp = require('gulp'),
     filter = require('gulp-filter'),
     gulpif = require('gulp-if'),
     inject = require('gulp-inject'),
-    gulp_server = require('gulp-webserver'),
     bSync = require('browser-sync'),
     fs = require("fs"),
     del = require('del'),
@@ -25,20 +24,25 @@ const gulp = require('gulp'),
     module_ext_name = `${node_env === 'production' ? '.min.css' : '.css'}`,
     concat_theme_name = (param) => `${param}${node_env === 'production' ? '.min' : ''}.css`;
 
-const themeTask = done => {
-    allTheme.forEach(item => {
-        scssTask(done, item)
+const themeTask = async (done) =>{
+    const allTask = allTheme.map(item => {
+        return scssTask(done, item);
     })
+    const allFinshed = await Promise.all(allTask)
+    console.log('themeTask done');
+    injectTask(done);
     done()
 }
 
-const scssTask = (done, themeType = theme) => {
-    return bundleScss(themeType).pipe(bSync.reload({
-        stream: true
-    }))
-}
+const scssTask =  (done, themeType = theme) => new Promise((resolve)=>{
+    bundleScss(themeType).on('end',()=>{
+        console.log(`${themeType} build finished `);
+        resolve(true);
+    })
+})
 
-const bundleScss = (themeType) => {
+
+const bundleScss = themeType => {
     return gulp.src([...scss_path, '!src/theme/*.scss'])
         .pipe(sourcemaps.init())
         .on('error', scss.logError)        //错误信息
@@ -55,7 +59,7 @@ const bundleScss = (themeType) => {
         .pipe(concat(concat_theme_name(themeType)))
         .pipe(sourcemaps.write('./'))
         .pipe(gulp.dest(output_path_style))
-      
+        
 }
 
 // scss 全局变量注入
@@ -71,7 +75,7 @@ const watchPipe = done => {
     watcher.on("change", gulp.series('clean', 'scss'))
     watcher.on("add", gulp.series('clean', 'scss'))
     watcher.on("unlink", gulp.series('clean', 'scss'))
-    gulp.watch([`${output_path}/**/*`, `!${output_path}/**/*.html`], gulp.parallel('html'))
+    // gulp.watch([`${output_path}/**/*`, `!${output_path}/**/*.html`], gulp.parallel('html'))
     done()
 }
 
@@ -79,7 +83,7 @@ const cleanFiles = () => {
     return del(output_path_style, { read: false })
 }
 
-const server = done=> {
+const server = done => {
     bSync({
         server: {
             baseDir: [output_path, './']
@@ -88,7 +92,8 @@ const server = done=> {
     done()
 }
 
-const injectTask = done=> {
+const injectTask = done => {
+    console.log('inject');
     const target = gulp.src('./public/index.html'),
         source = gulp.src([`${output_path}/**/*.js`, `${output_path_style}/${concat_theme_name(theme)}`, `!${output_path_style_modules}/**/*.css`], { read: false });
 
@@ -103,6 +108,9 @@ const injectTask = done=> {
             }
         }, { relative: true })
     ).pipe(gulp.dest(output_path))
+        .pipe(bSync.reload({
+            stream: true
+        }))
     done()
 }
 
@@ -113,17 +121,6 @@ const jsTask = (done) => {
 }
 
 
-const webServer = ()=>{
-    gulp.src([output_path, './'])
-    .pipe(gulp_server({
-        open:true,
-        // directoryListing: true,
-        livereload:{
-            enable:true,
-            fallback: 'index.html'
-        }
-    }))
-}
 
 gulp.task('clean', cleanFiles)
 gulp.task('watch', watchPipe)
@@ -132,6 +129,5 @@ gulp.task('scss', themeTask)
 gulp.task('js', jsTask)
 gulp.task('html', injectTask)
 gulp.task('server', server)
-gulp.task('web',webServer)
-gulp.task('default', gulp.series('clean', gulp.parallel('scss', 'js'), 'watch','web'))
+gulp.task('default', gulp.series('clean', gulp.parallel('scss', 'js'), 'watch', 'server'))
 gulp.task('build', gulp.series('clean', gulp.parallel('scss', 'js')))
