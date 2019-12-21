@@ -2,6 +2,34 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 0.0.37 (2019-12-21)
+
+
+### Features
+
+* add build task ([9a21115](https://github.com/SoldierAb/gulp-skin/commit/9a21115c43bd0831d5341e43bee59442fe8d3dd6))
+* add concat filter ([5bb2d25](https://github.com/SoldierAb/gulp-skin/commit/5bb2d2520b859de8bbfb86a2ed03eda1980065e1))
+* add csstask ([63b7aef](https://github.com/SoldierAb/gulp-skin/commit/63b7aef3018c2dd43a11f9422d57dc16c5b67b19))
+* add filter ([4a915c2](https://github.com/SoldierAb/gulp-skin/commit/4a915c2b8e6e423b6c63fd17c10619ce3c021133))
+* add gulp-inject ([c20fc3a](https://github.com/SoldierAb/gulp-skin/commit/c20fc3a60b73161d60d57b1678586db4a4a67b03))
+* add server ([803f688](https://github.com/SoldierAb/gulp-skin/commit/803f68830ea02fa8b5349619637411c25bb3db92))
+* add simple git push action ([945d215](https://github.com/SoldierAb/gulp-skin/commit/945d215801f0faa966d07be628cfa664e8b85dee))
+* add standard-version ([a77af43](https://github.com/SoldierAb/gulp-skin/commit/a77af43b10ce390e0d9b15750c41e20550b4add5))
+* init ([be18a98](https://github.com/SoldierAb/gulp-skin/commit/be18a9851555361e77ad03b55167de7b7839af78))
+* pre-push ([a285771](https://github.com/SoldierAb/gulp-skin/commit/a285771d424d77e6f51eec83741d0d9fb6647685))
+* sourcemap ([99452ce](https://github.com/SoldierAb/gulp-skin/commit/99452cebfe0b0965e9ea365f58d7b177bc929cff))
+
+
+### Bug Fixes
+
+* add huskyrc ([9bb2fbe](https://github.com/SoldierAb/gulp-skin/commit/9bb2fbebd9c05eaa635544f932c33f5d1e8a0e3b))
+* change bundle inject eventloop ([88cbe9d](https://github.com/SoldierAb/gulp-skin/commit/88cbe9de991a0474ddd5c2e238e8e5c0a5ee6ba0))
+* fix log ([63e193b](https://github.com/SoldierAb/gulp-skin/commit/63e193b425b185d74120b451ed54458ab8eda495))
+* fix theme multiple build ([7a6c330](https://github.com/SoldierAb/gulp-skin/commit/7a6c330b4698c598f9a92944d0e0bf24bc4952e9))
+* fix theme style bundle ([88cf5c0](https://github.com/SoldierAb/gulp-skin/commit/88cf5c05be6d06bf4e68d7d32f163bda5357fb04))
+* log update ([5dae978](https://github.com/SoldierAb/gulp-skin/commit/5dae978e44ff7a93bbaf9e41bb6608e9fb01b23e))
+* test ([264279b](https://github.com/SoldierAb/gulp-skin/commit/264279b41c1068fb02ed1228c0a2b8caae78513b))
+
 ### [0.0.36](https://github.com/SoldierAb/gulp-skin/compare/v0.0.35...v0.0.36) (2019-12-20)
 
 
