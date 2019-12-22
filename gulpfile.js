@@ -14,7 +14,7 @@ const gulp = require('gulp'),
     del = require('del'),
     argv = require('yargs').argv,
     theme = process.env.npm_config_theme || 'default',
-    { theme: allTheme, common: commonScss } = require('./theme.config.js'),
+    { theme: allTheme, common: commonScss, themeTagId } = require('./theme.config.js'),
     node_env = argv.env || 'development',
     scss_path = ['src/**/*.scss', '!node_modules'],
     output_path = 'dist',
@@ -103,7 +103,7 @@ const injectTask = done => {
         inject(source, {
             transform: function (filepath) {
                 if (filepath.includes(`${theme}.css`)) {
-                    return `<link id="theme"  rel="stylesheet" type="text/css" href="${filepath}"></link>`
+                    return `<link id="${themeTagId}"  rel="stylesheet" type="text/css" href="${filepath}"></link>`
                 }
                 // Use the default transform as fallback:
                 return inject.transform.apply(inject.transform, arguments);

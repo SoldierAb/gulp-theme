@@ -3,5 +3,6 @@ module.exports = {
     theme: {
         default: './src/theme/default.scss',
         light: './src/theme/default.scss',
-    }
+    },
+    themeTagId:'theme',
 }
