@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.39](https://github.com/SoldierAb/gulp-skin/compare/v0.0.36...v0.0.39) (2019-12-22)
+
+
+### Features
+
+* add build task ([9a21115](https://github.com/SoldierAb/gulp-skin/commit/9a21115c43bd0831d5341e43bee59442fe8d3dd6))
+
+
+### Bug Fixes
+
+* change bundle inject eventloop ([88cbe9d](https://github.com/SoldierAb/gulp-skin/commit/88cbe9de991a0474ddd5c2e238e8e5c0a5ee6ba0))
+
 ### [0.0.38](https://github.com/SoldierAb/gulp-skin/compare/v0.0.37...v0.0.38) (2019-12-21)
 
 ### 0.0.37 (2019-12-21)
