@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.1.0](https://github.com/SoldierAb/gulp-skin/compare/v0.0.39...v0.1.0) (2019-12-22)
+
+
+### ⚠ BREAKING CHANGES
+
+* = =
+
+### Bug Fixes
+
+* fix scss hot-build ([c23ba1f](https://github.com/SoldierAb/gulp-skin/commit/c23ba1f95ad4f6513ecef983a22b858fe60b2a8e))
+
 ### [0.0.39](https://github.com/SoldierAb/gulp-skin/compare/v0.0.36...v0.0.39) (2019-12-22)
 
 
