@@ -17,7 +17,6 @@ const gulp = require('gulp'),
     { theme: allTheme, 
         common: commonScss, 
         themeTagId ,
-        buildModules,
         output,
         injectHtml
     } = require('./theme.config.js'),
@@ -101,7 +100,7 @@ const server = done => {
     done()
 }
 
-const injectTask = done => {
+const injectTask = () => {
     console.log('inject');
     const target = gulp.src(injectHtml),
         source = gulp.src([`${output_path}/**/*.js`, `${output_path_style}/${concat_theme_name(theme)}`, `!${output_path_style_modules}/**/*.css`], { read: false });
@@ -120,7 +119,6 @@ const injectTask = done => {
         .pipe(bSync.reload({
             stream: true
         }))
-    done()
 }
 
 const jsTask = (done) => {
