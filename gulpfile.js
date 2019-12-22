@@ -50,9 +50,8 @@ const scssTask = (done, themeType = theme) => new Promise((resolve) => {
 const bundleScss = themeType => {
     return gulp.src([...scss_path, '!src/theme/*.scss'])
         .pipe(sourcemaps.init())
-        .on('error', scss.logError)        //错误信息
         .pipe(setGlobalScss(themeType))
-        .pipe(scss())
+        .pipe(scss().on('error', scss.logError))
         .pipe(gulpif(node_env === 'production', cleanCss())) // 仅在生产环境时候进行压缩
         .pipe(autoprefix())
         .pipe(rename((path) => {
@@ -137,4 +136,5 @@ gulp.task('js', jsTask)
 gulp.task('html', injectTask)
 gulp.task('server', server)
 gulp.task('default', gulp.series('clean', gulp.parallel('scss', 'js'), 'watch', 'server'))
+gulp.task('hot-build', gulp.series('clean', gulp.parallel('scss', 'js'), 'watch'))
 gulp.task('build', gulp.series('clean', gulp.parallel('scss', 'js')))
