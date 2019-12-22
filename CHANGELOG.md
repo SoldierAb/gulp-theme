@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.1](https://github.com/SoldierAb/gulp-skin/compare/v0.1.0...v0.1.1) (2019-12-22)
+
+
+### Features
+
+* theme task update ([638ed4f](https://github.com/SoldierAb/gulp-skin/commit/638ed4f6121d1e13759c3ce8c6ca4a9905f8117c))
+* update config ([d72946d](https://github.com/SoldierAb/gulp-skin/commit/d72946d87a923f637027242b439be1603b5944f3))
+
+
+### Bug Fixes
+
+* output glob fix ([3c4ae20](https://github.com/SoldierAb/gulp-skin/commit/3c4ae209646413b9962c849878770b1da84e7a8d))
+
 ## [0.1.0](https://github.com/SoldierAb/gulp-skin/compare/v0.0.39...v0.1.0) (2019-12-22)
 
 
