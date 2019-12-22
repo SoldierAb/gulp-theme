@@ -6,7 +6,6 @@ module.exports = {
         blue: './src/theme/blue.scss',
     },
     output:{
-        modules:'./dist/style/modules',
         all:'./dist/style',
     },
     themeTagId:'theme',

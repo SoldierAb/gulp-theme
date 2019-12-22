@@ -25,7 +25,7 @@ const gulp = require('gulp'),
     output_path = 'dist',
     output_path_js = `${output_path}/js`,
     output_path_style = output.all,
-    output_path_style_modules = output.modules,
+    output_path_style_modules = `${output_path_style}/modules`,
     module_ext_name = `${node_env === 'production' ? '.min.css' : '.css'}`,
     concat_theme_name = (param) => `${param}${node_env === 'production' ? '.min' : ''}.css`;
 
