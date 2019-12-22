@@ -5,4 +5,8 @@ module.exports = {
         light: './src/theme/default.scss',
     },
     themeTagId:'theme',
+    output:{
+        modules:'./dist/style/modules',
+        all:'./dist/style',
+    },
 }
