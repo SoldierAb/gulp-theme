@@ -18,7 +18,8 @@ const gulp = require('gulp'),
         common: commonScss, 
         themeTagId ,
         buildModules,
-        output
+        output,
+        injectHtml
     } = require('./theme.config.js'),
     node_env = argv.env || 'development',
     scss_path = ['src/**/*.scss', '!node_modules'],
@@ -102,7 +103,7 @@ const server = done => {
 
 const injectTask = done => {
     console.log('inject');
-    const target = gulp.src('./public/index.html'),
+    const target = gulp.src(injectHtml),
         source = gulp.src([`${output_path}/**/*.js`, `${output_path_style}/${concat_theme_name(theme)}`, `!${output_path_style_modules}/**/*.css`], { read: false });
 
     return target.pipe(
