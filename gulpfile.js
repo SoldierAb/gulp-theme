@@ -14,7 +14,7 @@ const gulp = require('gulp'),
     del = require('del'),
     argv = require('yargs').argv,
     theme = process.env.npm_config_theme || 'default',
-    allTheme = require('./theme.json'),
+    { theme: allTheme, common: commonScss } = require('./theme.config.js'),
     node_env = argv.env || 'development',
     scss_path = ['src/**/*.scss', '!node_modules'],
     output_path = 'dist',
@@ -24,8 +24,8 @@ const gulp = require('gulp'),
     module_ext_name = `${node_env === 'production' ? '.min.css' : '.css'}`,
     concat_theme_name = (param) => `${param}${node_env === 'production' ? '.min' : ''}.css`;
 
-const themeTask = async (done) =>{
-    const allTask = allTheme.map(item => {
+const themeTask = async (done) => {
+    const allTask = Object.keys(allTheme).map(item => {
         return scssTask(done, item);
     })
     const allFinshed = await Promise.all(allTask)
@@ -34,8 +34,8 @@ const themeTask = async (done) =>{
     done()
 }
 
-const scssTask =  (done, themeType = theme) => new Promise((resolve)=>{
-    bundleScss(themeType).on('end',()=>{
+const scssTask = (done, themeType = theme) => new Promise((resolve) => {
+    bundleScss(themeType).on('end', () => {
         console.log(`${themeType} build finished `);
         resolve(true);
     })
@@ -59,14 +59,16 @@ const bundleScss = themeType => {
         .pipe(concat(concat_theme_name(themeType)))
         .pipe(sourcemaps.write('./'))
         .pipe(gulp.dest(output_path_style))
-        
+
 }
 
 // scss 全局变量注入
 const setGlobalScss = (themeType) => {
-    const resDefault = fs.readFileSync(`./src/theme/${themeType}.scss`),
-        resCommon = fs.readFileSync('./src/theme/common.scss'),
-        scssString = resCommon.toString() + " \n " + resDefault.toString();
+    const resDefault = fs.readFileSync(`./src/theme/${themeType}.scss`).toString(),
+        resCommon = Array.isArray(commonScss) ? commonScss.map(commonPath => {
+            return fs.readFileSync(commonPath).toString()
+        }).join(" \n ") : fs.readFileSync(commonScss).toString(),
+        scssString = resCommon + " \n " + resDefault;
     return header(scssString);
 }
 
