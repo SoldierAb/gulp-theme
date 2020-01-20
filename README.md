@@ -1,4 +1,4 @@
-# Implementation of SCSS skin packaging based on gulp
+# Implementation of SCSS theme packaging based on gulp
 
 ## Project setup
 ```
