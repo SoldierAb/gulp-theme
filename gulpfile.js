@@ -33,8 +33,8 @@ const themeTask = async (done) => {
     const allTask = Object.keys(allTheme).map(item => {
         return scssTask(done, item);
     })
-    const allFinshed = await Promise.all(allTask)
-    if(allFinshed.every(item=>item)){
+    const allFinished = await Promise.all(allTask)
+    if(allFinished.every(item=>item)){
         console.log('themeTask done');
         injectTask(done);
     }
